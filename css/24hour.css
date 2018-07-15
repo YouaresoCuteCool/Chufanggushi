@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin:0;	
+}
+body{
+	background-image: url("../images/bgImg.png");
+	background-repeat: no-repeat;
+	background-color: #fdfdfd;
+	position: relative;
+	z-index: -1;
+}
+.title-cpt{
+	width:65%;
+	height:40px;
+	margin-top:50px;
+	margin-left:90px;
+	padding:5px;
+}
+.contain{
+	width:65%;
+	height:1500px;
+	margin:auto;
+}
+.type-title-cpt{
+	font-family:'sans-serif','微软雅黑';
+	width:65%;
+	height:30px;
+	margin-left:90px;
+	font-size:20px;
+	color:gray;
+}
+.active{
+	margin-right:20px;
+}
+.active:hover{
+	border-bottom:2px solid black;
+	color:black;
+	cursor:pointer;
+}
+.active a{
+	text-decoration:none;
+	color:black;
+}
+.Article{
+	width:80%;
+	height:1200px;
+	margin:50px auto;
+	font-family:'sans-serif';
+}
+.Hot-articles{
+	padding:15px;
+}
+.Article ul{
+	margin-bottom:35px;
+}
+.Article .Hot-articles{
+	width:100%;
+	min-height:200px;
+	max-height:300px;
+	border:1px solid #e8e8e8;
+	background-color:white;
+	margin-bottom:10px;
+	display:none;
+}
+.Article .topicName{
+	font-size:25px;
+	text-decoration:none;
+	margin-left:10px;
+	color:black;
+}
+.Article .topicName:hover{
+	color:#78bc85;
+}
+.Article .topicAuthor{
+	text-decoration:none;
+	margin-left:10px;
+	color:black;
+}
+.Article .topicAuthor:hover{
+	color:#78bc85;
+}
+.Article .Contxt{
+	width:98%;
+	min-height:90px;
+	max-height:200px;
+	font-size:13px;
+	font-weight:lighter;
+	margin-left:10px;
+}
+.Hot-articles img{
+	width:10px;
+	height:10px;
+	margin-left:5px;
+}
+.Contxt a{
+	color:#76b069;
+	text-decoration:none;
+}
+.Article div img{
+	width:10px;
+	height:10px;
+}
+.gif{
+	margin:100px 400px;
+}

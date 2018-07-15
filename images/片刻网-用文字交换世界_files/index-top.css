@@ -1,0 +1,428 @@
+/*返回顶部按钮*/
+.backTotop{
+	width:50px;
+	height:50px;
+	position:fixed;
+	right:100px;
+	top:600px;
+	background-image:url("../images/back-top.png");
+	background-size:50px 50px;
+	opacity:.2;
+	display:none;
+}
+.backTotop:hover{
+	background-image:url("../images/back-topH.png");
+	opacity:.8;
+}
+/*头部*/
+.nav-header{
+	width: 100%;
+	min-width: 1200px;
+	height: 90px;
+	background-color: white;
+	border-bottom: 1px solid #F2F2F2;
+	position:fixed;
+	z-index: 99;
+	top:-94px;
+	left:0;
+	transition:0.3s;
+}
+.nav-header.on{
+	top:0;
+}
+.nav-header img{
+	float: left;
+	margin-left:20%;
+	margin-top: 26.5px;
+}
+.nav-header ul{
+	height: 90px;
+	margin-left: 30%;
+}
+.nav-header li{	
+	list-style-type: none;
+	width: 85px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	float: left;
+}
+.nav-header li a{
+	font-size: 16px;
+	display: inline-block;
+	width: 85px;
+	height: 90px;
+	text-decoration: none;
+	color: black;
+}
+.nav-header .active{	
+	background-color:#FCFCFC;
+	border-bottom: 3px solid black;
+}
+.nav-header li a:hover{
+	width: 85px;
+	height: 90px;
+	background-color:#FCFCFC;
+}
+.editor{
+	width: 44px;
+	height: 44px;
+	border: 1px solid #57ad68;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: absolute;
+    margin-top:22px;
+	margin-left: 300px;
+}
+.sign{
+	width: 38px;
+	height: 38px;
+	background: -webkit-linear-gradient(left,rgba(101,181,117,0.9),#55b668);
+	border-radius: 19px;
+	position: absolute;
+	top: 1.5px;
+	left:2px;
+	z-index: 1;
+}
+.sign img{
+	width: 20px;
+	height:20px;
+	position: absolute;
+	left: 3px;
+	top: -16px; 
+	float: left;
+}
+.register{
+	width: 125px;
+	height: 45px;
+	line-height:45px;
+	margin-top:22.5px;
+	margin-left: 322.5px;
+	color: #4bac58;
+	border:1px solid #4bac58;
+	border-radius:25px;
+	float:left;
+}
+/*模态框*/
+.login{
+    overflow: scroll;
+    width: 100%;
+    position: fixed;
+    z-index: 1001;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    display:none;
+}
+.login .close-login-box{
+    cursor: pointer;
+    background-image: url(../images/close-login.png);
+    background-size: 20px;
+    height: 20px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+.login .login-box{
+    position: absolute;
+    font-weight: 300;
+    width: 500px;
+    top: 50%;
+    margin-top: -345px;
+    left: 50%;
+    margin-left: -250px;
+    height: 690px;
+    background-repeat: no-repeat;
+    background-image: url(../images/login-bg.png);
+    background-size: cover;
+}
+.login .login-box .pianke-text{
+    text-align: center;
+    padding-top: 146px;
+    color: #231916;
+    font-weight: 200;
+    font-size: 16px;
+}
+.login .login-box .type-title-cpt{
+    padding-top: 73px;
+    padding-bottom: 27px;
+    text-align: center;
+}
+.type-title-cpt{
+    clear: both;
+    padding-bottom: 34px;
+    padding-top: 40px;
+    color: #999;
+    font-size: 16px;
+}
+.login .login-box .type-title-cpt span:first-child{
+    margin-right: 70px;
+}
+.type-title-cpt .active{
+    color: #333;
+}
+.type-title-cpt span {
+    cursor: pointer;
+    position: relative;
+}
+.login .login-box .register-content{
+    margin: 0 auto;
+    margin-bottom: 37px;
+    margin-top: 10px;
+    background-position: center;
+    width: 134px;
+    height: 212px;
+    background-image: url(../images/wechat-bg.png);
+    background-size: 134px;
+    background-repeat: no-repeat;
+}
+.login .login-box .register-content img{
+    width: 92px;
+    height: 92px;
+    margin-top: 70px;
+    margin-left: 21px;
+}
+.login-warn {
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    color: #e86f6f;
+}
+.login-input {
+    width: 270px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+.type-title-cpt .active:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    top: 30px;
+    left: 0;
+}
+.login-input input {
+    box-sizing: border-box;
+    width: 270px;
+    height: 33px;
+    outline: none;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid transparent;
+    color: #333;
+    border-bottom-color: #e8e8e8;
+}
+input[placeholder]{
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #ccc;
+}
+.login .login-box .forget-psw{
+    width: 270px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: right;
+    padding-top: 10px;
+}
+.login .login-box .forget-psw a{
+    color: #ccc;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.login .login-box .login-btn{
+    margin: 0 auto;
+    margin-top: 38px;
+    margin-bottom: 33px;
+}
+.login .login-box .login-btn{
+    width: 172px;
+    font-size: 16px;
+}
+.login-btn{
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 44px;
+    width: 126px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid rgba(120,188,133,0.5);
+    border-radius: 25px;
+    color: #57ad68;
+    cursor: pointer;
+}
+.login .login-box .login-btn:hover{
+    color: white;
+    background-color: #57ad68;
+}
+.login .login-box .login-others-way{
+    margin: 0 auto;
+    padding-top: 16px;
+    width: 400px;
+    border-top: 1px solid #f2f2f2;
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+}
+.login .login-box .login-others-way .share-cpt{
+    float: none;
+    margin-top: 23px;
+}
+.share-cpt{
+    cursor: pointer;
+    margin-top: -32px;
+    float: right;
+}
+.share-cpt .share-sina{
+    background-image: url(../images/foot-sinaH.png);
+}
+.share-cpt .share-wechat{
+    background-image: url(../images/foot-wechatH.png);
+}
+.share-cpt .share-qq{
+    background-image: url(../images/qq.png);
+}
+.share-cpt .share-dou{
+    background-image: url(../images/dou.png);
+}
+.share-cpt .share-sina:hover{
+    background-image: url(../images/share-sina.png);
+}
+.share-cpt .share-wechat:hover{
+    background-image: url(../images/share-wechat.png);
+}
+.share-cpt .share-qq:hover{
+    background-image: url(../images/share-qq.png);
+}
+.share-cpt .share-dou:hover{
+    background-image: url(../images/share-dou.png);
+}
+.share-cpt > div{
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+}
+/*尾部*/
+.nav-footer{
+	clear: both;
+	width: 100%;
+	height: 120px;
+	background-color: #151212;
+	font-size: 10px;
+}
+.foot-logo{
+	width: 100px;
+	height: 50px;
+	float: left;
+	margin-left:20%;
+	margin-top: 35px;
+}
+.foot-logo img{
+	width: 100px;
+	height: 50px;
+}
+.foot-word{
+	width: 400px;
+	height: 120px;
+	float: left;
+}
+.rights{
+	width: 400px;
+	height: 40px;
+	color:gray;
+	margin-left:10%;
+}
+.nav-footer ul{
+	width: 400px;
+	height: 60px;
+	margin-left:10%;
+	position: relative;
+}
+.nav-footer li{
+	width: 60px;
+	height: 60px;
+	float: left;
+	list-style-type: none;
+}
+.nav-footer li a{
+	text-decoration:none;
+	color:gray;
+	position: absolute;
+	bottom: 0px;
+}
+.foot-logos{
+	width: 400px;
+	height: 120px;
+	float: left;
+}
+.foot{
+	width: 45px;
+	height: 45px;
+	margin-top:37.5px;
+	float: left;
+	margin-left: 15px;
+}
+.foot a{
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+.foot-app{
+	background-image: url("../images/foot-app.png");
+	background-size: 45px;
+	margin-left: 40%;
+	background-repeat: no-repeat;
+}
+.foot-sina{
+	background-image: url("../images/foot-sina.png");
+	background-size: 45px;
+	background-repeat: no-repeat;
+}
+.foot-wechat{
+	background-image: url("../images/foot-wechat.png");
+	background-size: 45px;
+	background-repeat: no-repeat;
+}
+.foot-app:hover{
+	background-image: url("../images/foot-app01.png");
+	background-size: 45px;
+	margin-left: 40%;
+	background-repeat: no-repeat;
+}
+.foot-sina:hover{
+	background-image: url("../images/foot-sina01.png");
+	background-size: 45px;
+	background-repeat: no-repeat;
+}
+.foot-wechat:hover{
+	background-image: url("../images/foot-wechat01.png");
+	background-size: 45px;
+	background-repeat: no-repeat;
+}
+.foot-wechat:hover img{
+	display: inline-block;
+	z-index: 3;
+}
+.foot-safe img{
+	width: 90px;
+	height: 42px;
+	margin-top: -5px;
+	margin-left:40px;
+}
+.foot-wechat img{
+	width: 180px;
+	height: 180px;
+	position: relative;
+	top: -200px;
+	left: -70px;
+	display: none;
+}

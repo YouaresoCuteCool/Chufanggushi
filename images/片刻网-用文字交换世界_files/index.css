@@ -1,0 +1,368 @@
+*{
+	padding: 0;
+	margin:0;	
+}
+body{
+	background-image: url("../images/bgImg.png");
+	background-repeat: no-repeat;
+	background-color: #fdfdfd;
+	position: relative;
+	z-index: -1;
+}
+.editor{
+	width: 44px;
+	height: 44px;
+	border: 1px solid #57ad68;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: absolute;
+    margin-top:22px;
+	margin-left: 300px;
+}
+.sign{
+	width: 38px;
+	height: 38px;
+	background: -webkit-linear-gradient(left,rgba(101,181,117,0.9),#55b668);
+	border-radius: 19px;
+	position: absolute;
+	top: 2px;
+	left:2px;
+	z-index: 1;
+}
+.sign img{
+	width: 20px;
+	height:20px;
+	position: absolute;
+	left: 3px;
+	top: -16px; 
+	float: left;
+}
+/*内容部分*/
+.section{
+	width: 960px;
+	margin:35px auto;
+}
+.sec-left{
+	width: 480px;
+	height: 480px;
+	float: left;
+	background-image: url("../images/p101.jpg");
+	background-size: 480px;
+	position: relative;
+}
+.sec-right{
+	width: 480px;
+	height: 480px;
+	float: left;
+}
+.sec-rig{
+	position: relative;
+}
+.sec-left-band{
+	width: 480px;
+	height: 80px;
+	line-height: 80px;
+	color: white;
+	font-size: 18px;
+	background-color:rgba(0,0,0,.5);
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.sec-right-band{
+	width: 240px;
+	height: 80px;
+	line-height: 80px;
+	color: white;
+	font-size: 18px;
+	background-color:rgba(0,0,0,.5);
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.sec-head span{
+	margin-left: 20px;
+}
+.sec-head hr{
+	width: 30px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: -15px;
+}
+/*Read部分*/
+.sec-read{
+	width: 960px;	
+}
+.sec-read-tit{
+	padding-top:75px;
+	padding-bottom: 40px;
+	clear: both;
+}
+.sec-read .article{
+	width: 960px;
+	height: 220px;
+	margin-top:10px;
+	border:1px solid #D4D4D4;
+	background-color: #ffffff;
+}
+.art-word{
+	width: 600px;
+	padding-top: 25px;
+	padding-left: 20px;
+	float: left;
+}
+.art-word span{
+	color: black;
+	margin-top: 5px;
+}
+.art-tit{
+	font-size: 23px;
+}
+.art-per{
+	font-size: 12px;
+}
+.talk{
+	margin-top:35px;
+}
+.art-word hr{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 30px;
+}
+.art-word p{
+	font-weight: lighter;
+	font-size: 13px;
+}
+.art-word .view{
+	font-size:13px;
+	font-weight: bold;
+	color: #67b18c;
+}
+.art-word span:hover{
+	color: #67b18c;
+}
+.art-word .view:hover{
+	color: #4ca259;
+}
+.art-word img{
+	width: 6px;
+	height: 10px;
+}
+.art-word a{
+	text-decoration: none;
+}
+.article .art img{
+	width: 300px;
+	height: 220px;
+	float: right;
+}
+/*TING部分*/
+.sec-tings{
+	width: 300px;
+	height: 420px;
+	border:1px solid #D4D4D4;
+	background-color: #ffffff;
+	float: left;
+	margin-right: 18px;
+}
+.sec-tings a{
+	text-decoration: none;
+}
+.sec-tings .bg{
+	width: 300px;
+	height: 300px;
+	background-image: url(../images/p107.jpeg);
+	background-size: 300px;
+}
+.sec-tings .bg-word{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.bg .play{
+	width: 300px;
+	height: 300px;
+	background-image: url(../images/placehoderImg.png);
+	opacity: .5;
+	position: relative;
+	display: none;
+}
+.bg .play img{
+	width: 82px;
+	height: 82px;
+	position: absolute;
+	left:109px;
+	top:109px;
+	display: none;
+}
+.sec-tings p{
+	font-weight: lighter;
+	font-size: 13px;
+	margin-top: 15px;
+}
+.sec-tings span:hover{
+	color: #67b18c;
+}
+.sec-tings a{
+	color: black;
+	text-decoration: none;
+}
+/*pianke部分*/
+.person{
+	width: 230px;
+	height: 235px;
+	float: left;
+	border:1px solid #D4D4D4;
+	background-color: #ffffff;
+	margin-right: 8px;
+	background-image: url("../images/p115.png");
+	background-size: 230px 235px;
+	position: relative;
+}
+.person img{
+	width: 50px;
+	height: 20px;
+	position: absolute;
+	top: 130px;
+	left: 35px;
+}
+.intro{
+	width: 80px;
+	position: absolute;
+	top: 60px;
+	left: 120px;
+}
+.intro a{
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+}
+.intro hr{
+	width: 15px;
+}
+.intro .intr{
+	font-weight: lighter;
+	font-size: 12px;
+}
+.intro a:hover{
+	color:  #67b18c;
+}
+/*查看更多部分*/
+.sec-look{
+	clear: both;
+	width: 190px;
+	height: 55px;
+	border:1px solid #4bac58;
+	border-radius: 25px;
+	margin:300px auto;
+	margin-bottom: 60px;
+}
+.box:hover img{
+	display: block;
+}
+.box:hover .play{
+	display: block;
+}
+.past-content-title{
+	width: 1200px;
+	clear: both;
+	margin-left: -100px;
+	background-image: url(../images/line-bg.png);
+	background-size:1200px 1px;
+	background-repeat: no-repeat;
+	background-position: 0px 73px;
+	font-family: "PingFang SC","微软雅黑";
+	color: #333;
+}
+.past-content-title >div {
+	padding-top: 60px;
+	background-position:550px 63px;
+	padding-bottom: 80px;
+}
+.title-cpt{
+	clear: both;
+	padding-bottom: 40px;
+	background-repeat: no-repeat;
+	padding-top: 70px;
+	padding-left:580px;
+	background-position: 0 74px;
+	background-image: url(../images/square.png);
+	background-position: 10px;
+	font-family: "PingFang SC","微软雅黑";
+	color: #333;
+} 
+.outer{
+	cursor: pointer;
+	width: 180px;
+	height: 45px;
+	color: white;
+	border:1px solid #4bac58;
+	background-color: rgb(120,188,133);
+	border-radius: 25px;
+	margin:4px auto;
+	text-align: center;
+	line-height: 45px;
+}
+.outer:hover{
+	background-color: #3a9541;
+}
+#main{
+	position: relative;
+	left:-140px;
+}
+.box{
+	padding: 15px 0 0 15px;
+	float: left;
+}
+.pic{	
+	border:1px solid #ccc;
+	border-radius: 5px;
+	box-shadow:0 0 5px #ccc;
+	background-color: white;
+}
+.pic img{
+	width: 300px;
+	height: auto;
+}
+.box .bg-word{
+	width: 280px;
+	padding-bottom:15px;
+	margin:20px 10px 10px;
+}
+.box .bg-word p{
+	font-weight: lighter;
+	font-size: 12px;
+	margin-top: 15px;
+}
+.card-type{
+	cursor:pointer;
+	float: left;
+	width: 35px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	border:1px solid #ccc;
+	border-radius: 35px;
+}
+.others{
+	float: right;
+}
+.card-type a:hover{
+	color:#67b18c;
+}
+.art-tit{
+	font-size: 20px;
+	font-weight: bold;
+}
+.art-tit:hover{
+	color:#67b18c;
+}
+.art-per{
+	font-size:12px;
+}
+.art-per:hover{
+	color:#67b18c;
+}
+.box .bg-word a{
+	color: black;
+	text-decoration: none;
+}

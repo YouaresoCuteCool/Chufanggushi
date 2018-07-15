@@ -1,0 +1,260 @@
+*{
+	padding: 0;
+	margin:0;	
+}
+body{
+	background-image: url("../images/bgImg.png");
+	background-repeat: no-repeat;
+	background-color: #fbfbfb;
+	position: relative;
+	z-index: -1;
+}
+.editor{
+	width: 44px;
+	height: 44px;
+	border: 1px solid #57ad68;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: absolute;
+    margin-top:22px;
+	margin-left: 300px;
+}
+.sign{
+	width: 38px;
+	height: 38px;
+	background: -webkit-linear-gradient(left,rgba(101,181,117,0.9),#55b668);
+	border-radius: 19px;
+	position: absolute;
+	top: 3px;
+	left:3px;
+	z-index: 1;
+}
+.sign img{
+	width: 20px;
+	height:20px;
+	position: absolute;
+	left: 6px;
+	top: -18px; 
+	float: left;
+}
+/*container部分*/
+.container {
+	width: 900px;
+	margin:0 auto;
+	margin-bottom: 200px;
+}
+.title-cpt {
+	clear: both;
+	padding-bottom: 40px;
+	background-repeat: no-repeat;
+	padding-top: 70px;
+	padding-left: 28px;
+	background-position: 0 74px;
+	background-image: url(../images/square.png);
+}
+.feed-item{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 18px 30px;
+	padding-bottom: 30px;
+	color: #333;
+	font-weight: 200;
+	font-size: 13px;
+	margin-bottom: 16px;
+	border: 1px solid #e8e8e8;
+	border-radius: 2px;
+}
+.feed-item .feed-user-info {
+	font-size: 12px;
+}
+.feed-item .feed-user-info .user-name {
+	font-weight: 400;
+	padding: 0 10px;
+}
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+.feed-item .feed-user-info img {
+	width: 31px;
+	height: 31px;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+.feed-item .feed-user-info .user-name a {
+	color: #333;
+}
+.feed-item .feed-user-info .user-name a:hover{
+	color: #67b18c;
+}
+.feed-item .feed-user-info .time {
+	float: right;
+}
+.feed-item .feed-title a {
+	color: #333;
+}
+.feed-item .feed-title {
+	font-weight: 500;
+	font-size: 16px;
+	padding-left: 40px;
+	padding-top: 6px;
+}
+.feed-item .feed-title a:hover{
+	color: #3ea046;
+}
+.feed-item .feed-article {
+	height: 172px;
+}
+.feed-item .feed-contend {
+	box-sizing: border-box;
+	margin-top: 22px;
+	margin-left: 40px;
+	padding-left: 27px;
+	width: 758px;
+	background-color: #fbfbfb;
+}
+.feed-item .feed-article > div {
+	float: left;
+}
+.feed-item .article-box {
+	width: 468px;
+	box-sizing: border-box;
+	padding-top: 24px;
+}
+.feed-item .article-box .article-content {
+	height: 106px;
+	padding-right: 25px;
+	line-height: 21px;
+}
+.view-all {
+	padding-left: 10px;
+	position: relative;
+}
+.view-all a {
+	color: #78bc85;
+	font-weight: 200;
+}
+.feed-item .article-box .feed-user-name a:hover{
+	color: #67b18c;
+}
+.view-all a:hover{
+	color:#3ea046;
+}
+.view-all a img {
+	vertical-align: baseline;
+	width: 5px;
+	padding-left: 3px;
+}
+.feed-item .article-box .feed-user-name {
+	position: relative;
+	padding-top: 26px;
+	font-size: 12px;
+}
+.feed-item .article-box .feed-user-name:before {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 1px;
+	top: 15px;
+	background-color: #333;
+}
+.feed-item .article-box .feed-user-name a {
+	color: #333;
+}
+.feed-item .feed-others {
+	color: #999;
+	font-size: 12px;
+	padding-top: 13px;
+	font-weight: 100;
+}
+.feed-item .active-img {
+	width: 263px;
+	height: 172px;
+	overflow: hidden;
+}
+.feed-item .feed-ting {
+	height: 179px;
+	padding-top: 22px;
+}
+.feed-item .feed-ting .ting-img {
+	margin-right: 28px;
+	width: 130px;
+	height: 130px;
+	border-radius: 6px;
+	overflow: hidden;
+	box-shadow: 0 3px 10px 0 #ccc;
+}
+.feed-item .feed-ting .ting-box .ting-content {
+	width: 386px;
+	padding-top: 9px;
+	height: 90px;
+}
+.feed-item .feed-ting .ting-box .ting-content .feed-user-name {
+	font-size: 12px;
+	padding-top: 10px;
+}
+.feed-item .feed-ting .ting-box .ting-content .feed-user-name a {
+	color: #333;
+	padding-left: 5px;
+}
+.feed-item .feed-ting .ting-box .ting-content .feed-user-name a:hover{
+	color: #67b18c;
+}
+.feed-item .feed-ting > div {
+	float: left;
+}
+.feed-item .feed-user-info {
+	font-size: 12px;
+}
+.feed-item .feed-user-info .user-name {
+	font-weight: 400;
+	padding: 0 10px;
+}
+.feed-item .feed-user-info .user-name a {
+	color: #333;
+}
+.feed-item .feed-user-info .time {
+	float: right;
+}
+.feed-item .feed-timeline {
+	padding-bottom: 17px;
+	padding-right: 30px;
+}
+.feed-item .feed-timeline .feed-user-name {
+	font-size: 12px;
+	padding-top: 15px;
+	position: relative;
+}
+.feed-item .feed-timeline .feed-user-name:before {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 1px;
+	bottom: 0;
+	margin-bottom: -10px;
+	background-color: #333;
+}
+.feed-item .feed-timeline .feed-user-name a {
+	color: #333;
+}
+.feed-item .feed-timeline .feed-user-name a:hover {
+	color: #67b18c;
+}
+.feed-item .feed-timeline .timeline-content {
+	padding-top: 30px;
+	font-size: 14px;
+}
+.feed-item .feed-timeline .timeline-content a {
+	color: #333;
+}
+.feed-item .feed-timeline .timeline-img {
+	width: 300px;
+	padding-top: 24px;
+}
+.feed-item .feed-others {
+	color: #999;
+	font-size: 12px;
+	padding-top: 13px;
+	font-weight: 100;
+}

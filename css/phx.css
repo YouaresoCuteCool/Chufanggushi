@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin:0;   
+}
+body{
+    background-image: url("../images/bgImg.png");
+    background-repeat: no-repeat;
+    background-color: #fdfdfd;
+    position: relative;
+    z-index: -1;
+}
+#container1{
+    width:50%;
+    height:3500px;
+    overflow:auto;
+    box-shadow:0px 0px 1px gray;
+    margin:30px auto;
+    background-color:white;
+    min-width:1000px;
+    margin-bottom:100px;
+}
+.container1{
+    width:70%;
+    height:2310px;
+    margin:50px auto;
+    position:relative;
+    font-family:'sans-serif';
+}
+.freewrite{
+    width:100px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    border:1px solid black;
+    margin-bottom:10px;
+}
+.freewrite a {
+    color:black;
+}
+.freewrite a:hover{
+    text-decoration:none;
+    opacity:.5;
+}
+.container1 .topic{
+    width:100%;
+    height:50px;
+    font-size:35px;
+}
+.container1 .topic-bottom{
+    width:100%;
+    height:50px;
+    margin:10px 0px;
+}
+.topic-bottom .left{
+    width:15%;
+    height:50px;
+    float:left;
+}
+.topic-bottom .left a{
+    text-decoration:none;
+}
+.topic-bottom .left a:hover{
+    color:#24c339;
+}
+.topic-bottom .left img{
+    width:40px;
+    height:40px;
+    border-radius:20px;
+}
+.topic-bottom .left span{
+    display:block;
+    width:50px;
+    height:40px;
+    line-height:50px;
+    float:right;
+    color: black;
+}
+.topic-bottom .left span:hover{
+    color:#67b18c;
+}
+.topic-bottom .right{
+    width:46%;
+    height:50px;
+    float:right;
+    line-height:50px;
+    color:gray;
+    font-weight:lighter;
+    font-size:13px;
+}
+hr{
+    width:100%;
+    border:1px solid gray;
+    opacity:.4;
+    margin:40px auto;
+}
+p{
+    margin:40px auto;
+    letter-spacing: 4px;
+}
+#pic1{
+    display:block;
+    margin:auto;
+    width:100%;
+    height:750px;
+    margin:auto;
+}
+#pic2{
+    width:100%;
+}
+#book{
+    text-decoration:none;
+    font-size:18px;
+    color:#857760;
+}
+#dec{
+    width:88%;
+    height:20px;
+    border:1px solid gray;
+    font-size:15px;
+    font-weight:lighter;
+    float:left;
+}
+#dec a{
+    color:#6db47a;
+}
+.tip{
+    display:block;
+    float:right;
+    text-decoration:none;
+    color:gray;
+    font-weight:lighter;
+}
+#admire{
+    width:100%;
+    height:50px;
+    margin:80px auto;
+}
+#admire .pic3{
+    width:30px;
+    height:30px;
+    margin:5px;
+    float:left;
+}
+#admire span{
+    width:60px;
+    height:50px;
+    line-height:50px;
+}
+#admire .pic3{
+    background:url("../phx-images/like.png") no-repeat;
+    background-size:30px 30px;
+}
+#admire .heart{
+    width:15%;
+    height:50px;
+    float:left;
+    cursor:pointer;
+}
+#admire .heart .pic3:hover{
+    background:url("../phx-images/likeH.png") no-repeat;
+    background-size:30px 30px;
+}
+#admire .share{
+    width:40%;
+    height:50px;
+    float:right;
+}
+.share ul{
+    list-style-type:none;
+}
+.share ul li{
+    width:50px;
+    height:50px;
+    float:left;
+    margin-left:10px;
+}
+.code{
+    width:210px;
+    height:210px;
+    position:absolute;
+    top:57%;
+    left:55%;
+    display:none;
+}
+textarea{
+    width:80%;
+    height:100px;
+    border:1px solid gray;
+    resize:none;
+    outline:none;
+    border-radius:5px;
+}
+.container input{
+    width:100px;
+    height:50px;
+    background-color:green;
+    color:white;
+    border-radius:20px;
+    font-size:14px;
+    position:relative;
+    top:-40px;
+    opacity:.5;
+}
+input:hover{
+    opacity:.9;
+}
+.msgSend{
+    color: #666;
+    outline: none;
+    width: 60%;
+    height: 100px;
+    resize: none;
+    overflow: auto;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    margin-left:150px;
+    font-family: "PingFang SC","微软雅黑";
+}
+textarea{
+    -webkit-appearance: textarea;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    padding: 2px;
+}
+/*设置输入框文本*/
+textarea[placeholder] {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #ccc;
+}
+.comment-head{
+    width:80%;
+    height:50px;
+    border-bottom:2px solid gray;
+    margin:auto;
+    padding-top:20px;
+    font-weight:bold;
+}
+.comment-head div{
+    width:100px;
+    font-size:20px;
+    font-weight:lighter;
+    border-bottom:3px solid black;
+    float:left;
+}
+.comment-head span{
+    width:100px;
+    font-size:15px;
+}
+article{
+    width:80%;
+    height:500px;
+    overflow:auto;
+    margin:10px auto;
+}
+article .comment{
+    width:90%;
+    min-height:120px;
+    max-height:500px;
+    overflow:hidden;
+    margin:10px auto;
+}
+.comment .headImg img{
+    width:60px;
+    height:60px;
+    border-radius:30px;
+    border-bottom:1px solid gray;
+    float:left;
+}
+.comment .info{
+    width:90%;
+    height:40px;
+    float:left;
+}
+.comment .msg{
+    width:80%;
+    height:40px;
+    float:left;
+    margin-top:10px;
+}
+.info div{
+    height:40px;
+    margin-left:5px;
+}
+.info .userName{
+    width:100px;
+    float:left;
+    cursor: pointer;
+    font-weight: 300;   
+    font-size: 14px;
+    padding-right: 10px;
+}
+.info .userName a{
+    color: #57ad68;
+    text-decoration:none;
+}
+.info .timePub{
+    width:120px;
+    float:left;
+    font-size:13px;
+}
+.info .others{
+    width:300px;
+    float:right;
+}
+.others div{
+    width:80px;
+    height:40px;
+    margin-right:12px;
+    float:left;
+    cursor:pointer;
+}
+.dianzan{
+    width:50px;
+    height:40px;
+}
+.dianzan{
+    background:url("../phx-images/praise.png") no-repeat;
+    background-size:20px 20px;
+    background-position:left 20px top;
+}
+.dianzan:hover{
+    background:url("../phx-images/praiseH.png") no-repeat;
+    background-size:20px 20px;
+    background-position:left 20px top;
+}
+.nocomment{
+    width:200px;
+    height:100px;
+    position:fixed;
+    top:40%;
+    left:40%;
+    box-shadow:0px 10px 10px gray;
+    text-align:center;
+    display:none;
+    background-color:white;
+}
+.nocomment img{
+    width:60px;
+    height:60px;
+}
+.delMsg{
+    width:400px;
+    height:180px;
+    position:fixed;
+    top:40%;
+    left:40%;
+    box-shadow:0px 10px 10px gray;
+    text-align:center;
+    background-color:white;
+    display:none;
+}
+.delMsg img{
+    width:100px;
+    height:100px;
+}
+.delMsg .btn{
+    margin-top:40px;
+}
+.recallMsg{
+    width:80%;
+    height:200px;
+    float:left;
+    margin-left:50px;
+}
+.recallMsg textarea{
+    width:90%;
+    height:40px;
+    resize:none;
+    margin-left:10px;
+}
+.recallMsg .btn{
+    margin-top:50px;
+    margin-left:150px;
+}
+.recallMsg1{
+    width:80%;
+    height:40px;
+    float:left;
+    margin-left:50px;
+    background-color:#fafafa;
+}
+.delete1{
+    cursor:pointer;
+    float:right;
+}
+.thumbImg{
+    background:url("..phx-images/praise.png") no-repeat;
+    background-size:20px 20px;
+}
+.thumbImg:hover{
+    background:url("..phx-images/praiseH.png") no-repeat;
+    background-size:20px 20px;
+}
+.dianzan:hover{
+    color:orange;
+}
+.jubao{
+    position:fixed;
+    top:40%;
+    left:40%;
+    width:250px;
+    height:250px;
+    box-shadow:0px 10px 10px gray;
+    background-color:white;
+}
+.jubao img{
+    width:150px;
+    height:150px;
+    margin-left:50px;
+}
+.jubao .btn{
+   margin-top:60px;
+   margin-left:20px;
+}
+.jubao span{
+    margin-left:70px;
+}
+.share .sina{
+    background-image:url("../phx-images/foot-sinaH.png");
+    background-size:50px 50px;
+}
+.share .wechat{
+    background-image:url("../phx-images/foot-wechatH.png");
+    background-size:50px 50px;
+}
+.share .space{
+    background-image:url("../phx-images/qzone.png");
+    background-size:50px 50px;
+}
+.share .dou{
+    background-image:url("../phx-images/dou.png");
+    background-size:50px 50px;
+}
+.share .sina:hover{
+    background-image:url("../phx-images/share-sina.png");
+}
+.share .wechat:hover{
+    background-image:url("../phx-images/share-wechat.png");
+}
+.share .space:hover{
+    background-image:url("../phx-images/share-qzone.png");
+}
+.share .dou:hover{
+    background-image:url("../phx-images/share-dou.png");
+}

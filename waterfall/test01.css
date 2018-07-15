@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#main{
+	position:relative;
+	left:-30px;
+}
+.box{
+	padding: 15px 0 0 15px;
+	float: left;
+
+}
+.pic{	
+	border:1px solid #ccc;
+	border-radius: 5px;
+	box-shadow:0 0 5px #ccc;
+}
+.pic img{
+	width: 310px;
+	height: auto;
+}
+.bg-word{
+	width: 290px;
+	padding-bottom:15px;
+	margin:30px 10px 10px;
+}
+.bg-word p{
+	height:50px;
+	font-weight: lighter;
+	font-size: 12px;
+	margin-top: 15px;
+	/*border:1px solid #ccc;*/
+}
+.card-type{
+	cursor:pointer;
+	float: left;
+	width: 35px;
+	height: 20px;
+	text-align: center;
+	line-height: 15px;
+	/*border:1px solid #ccc;*/
+}
+.others{
+	float: right;
+	margin-top:10px;
+}
+/*.card-type:hover{
+	color:#67b18c;
+}*/
+.art-tit{
+	/*color:black;*/
+	font-size: 15px;
+	/*font-size: 20px;*/
+	/*font-weight: bold;*/
+}
+/*.art-tit:hover{
+	
+}*/
+/*.art-per:hover{*/
+	/*color:red;*/
+	/*font-size:12px;*/
+/*}*/
+/*.art-per:hover{
+	color:#67b18c;
+}*/
+.bg-word a{
+	color:black;
+   text-decoration: none;
+}

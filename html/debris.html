@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/index-top.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="../css/debris.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <script src='../js/jquery-3.3.1.js'></script>
+  <script src="../bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="../waterfall/test01.css">
+  <script src='../waterfall/test01.js'></script>
+</head>
+<body>
+    <!-- Modal -->
+  <div class="login">
+    <div class="close-login-box"></div>
+    <div class="login-box">
+      <div class="pianke-text">世界很美, 而你正好有空</div>
+      <div class="type-title-cpt">
+        <span class="active">登录</span>
+        <span>注册</span>
+      </div>
+      <div class="register-content" style="display: none;"><img src="../images/pianke-code.png"></div>
+      <div class="login-content">
+        <div class="login-warn"></div>
+        <div class="login-input">
+          <input type="text" placeholder="输入邮箱或手机号">
+        </div>
+        <div class="login-input">
+          <input type="password" placeholder="密码">
+        </div>
+        <div class="forget-psw">
+          <a href="../../pages/set/getCaptcha.html?type=2">忘记密码?</a>
+        </div>
+        <div class="login-btn">登录</div>
+      </div>
+      <div class="login-others-way">
+        <div>社区账号登录:</div>
+        <div class="share-cpt">
+          <div class="share-sina"></div>
+          <div class="share-wechat"></div>
+          <div class="share-qq"></div>
+          <div class="share-dou"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->  
+<div class="nav-header">
+    <img src="../images/head-logo.png" alt="logo">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="read.html">阅读</a></li>
+      <li><a href="pianke.html">电台</a></li>
+      <li class="active"><a href="debris.html">碎片</a></li>  
+      <li><a href="dynamic.html">动态</a></li>  
+      <li><a href="client.html">客户端</a></li>
+      <li>
+        <div class="editor">
+          <div class="sign">
+            <img src="../images/edit-icon.png" alt="">
+          </div>  
+        </div>
+      </li>
+      <li>
+        <div class="register">登录/注册</div>
+      </li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="page" class="container-fluid">
+    <br>
+    <br>
+    <br>
+    <br>
+   <div id= "pageheader">
+    <div id="pagedate">
+      <div class="pagetime">
+      </div>
+      <form action="" id="writeword">
+        <textarea name="" id="writeborder" cols="130" rows="8" placeholder="这一刻，你想说点什么？" maxlength="140"></textarea>
+        <div id="writetag">
+          <ul>
+          <li class="writetagborder"><span class="publicchar">公开</span><span class="secret">秘密</span></li>
+          <li class="fileimage">
+            <span><input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg"></span>
+            <span>图片</span>
+          </li>
+          <li data-toggle="popover" data-placement="bottom"><span class="addtag"><img src="../images/tag.png" alt=""></span><span id="addtagword">添加标签</span></li>
+          </ul>
+        <div id="public">
+          <span class="wordcount">0/140字</span>
+          <div class="publicdebris"><input type="button" value="发布碎片"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+    <div id="pagesection" class="container-fluid">
+      <div class="hotword"><div class="hotsquare"></div>热门标签</div>
+      <!-- <ul class="hotimg"></ul> -->
+        <div class="hotimg">
+          <div class="bgone"><p><a href="">悄悄话</a></p><p>76687个</p></div>
+          <div class="bgtwo"><p><a href="">戳心歌词</a></p><p>76687个</p></div>
+          <div class="bgthree"><p><a href="">一见钟情的句子</a></p><p>76687个</p></div>
+          <div class="bgfour"><p><a href="">电影截图+经典歌词</a></p><p>76687个</p></div>
+          <div class="bgfive"><p><a href="">黑白大片</a></p><p>76687个</p></div>
+          <div class="bgsix"><p><a href="">最美摘抄</a></p><p>76687个</p></div>
+          <div class="bgseven"><p><a href="">旧书摊</a></p><p>76687个</p></div>
+          <div class="bgeight"><p><a href="">看照片猜身高</a></p><p>76687个</p></div>
+          <div class="bgnine"><p><a href="">三行情书</a></p><p>76687个</p></div>
+          <div class="bgten"><p><a href="">给力头像都在这</a></p><p>76687个</p></div>
+          <div class="bgeleven"><p><a href="">自拍狂魔</a></p><p>76687个</p></div>
+          <div class="bgtw"><p><a href="">给诗歌配图</a></p><p>76687个</p></div>
+        </div>
+    </div> 
+    <div id="pagefooter" class="container-fluid">
+      <div class="wholedebris"><div class="wholesquare"></div>全部碎片</div>
+    <!-- 瀑布流 -->
+     <div id="main">
+       <div class="box">
+        <div class="pic">
+        <a href="./debrispage.html"><img src="../images/62cb45f3821fa7b2096d75a2cabd2d8320180516.jpg" alt=""></a>
+       <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">我怕是对生活有什么误解 该受的苦一点都不会少给你</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/d22ac977b6b017f0b96690c40240aa7720180510.jpeg" alt="" style="width:50px;height:45px;border-radius:30px; border:1px solid red;" ></span>
+          <span style="margin-left:40px; line-height:50px" class="art-per"><a href="personnel.html">消极怠工人口</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px;"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="box">
+      <div class="pic">
+        <a href="./debrispage.html"><img src="../images/62e57a91cc9e9a83914bf7b0c61b704920180221.png" alt=""></a>
+        <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">青泥飘香，金蝉鸣唱，伴青纱白月光。 荷灯指尖微凉，一阵清漾。 不知飘向何方。青石旁，浊酒轻放。 月夜凉，攀心上，故人是否无恙? 荷塘粉瓣蛙乡，蛙声扬，酌酒胸间微烫。 孤影彷徨，月纱指尖流淌。 愿笛声悠扬，金铃旁，青衫轻晃。 影成双，共赏烂漫风光。</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/0d2d9040f4e66a85f47f95ed3923b1a420180425.jpg" alt="" style="width:50px;height:45px;border-radius:30px; border:1px solid red;" ></span>
+          <span style="margin-left:40px; line-height:50px" class="art-per"><a href="./personnel.html"> 🌈 彩虹大哥 _</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px; "></span>
+          </p>
+        </div>
+      </div>
+    </div>
+<!-- 3 -->
+    <div class="box">
+      <div class="pic">
+        <a href="./debrispage.html"><img src="../images/b2e4881a769c6cace3c3eb5a1bda74d220171015.jpg" alt=""></a>
+        <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">喂 你不知道 那条朋友圈我仅你可见 你就是那个让我变得积极的人. 你超棒的.</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/3c955e88b5cbc043c3b98d527e268c8b20180517.jpeg" alt="" style="width:50px;height:45px;border-radius:30px; border:1px solid red;" ></span>
+          <span style="margin-left:40px; line-height:50px" class="art-per"><a href="./personnel.html"> 温柔星眸</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px;"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 4 -->
+     <div class="box">
+      <div class="pic">
+        <a href="./debrispage.html"><img src="../images/3c730c126d4f3e689ee73e4e7bafe2fc20180516.png" alt=""></a>
+        <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">人类真的不能在同一个地方 待长久的生物呢， 不知不觉就长满了青苔</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/6d1f5bdf10aca5972dc6f967fd52978720170814.jpg" alt="" style="width:50px;height:45px;border-radius:30px; border:1px solid red;" ></span>
+          <span style="margin-left:40px;line-height:50px" class="art-per"><a href="./personnel.html"> soul尽余生</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px; "></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 5 -->
+    <div class="box">
+      <div class="pic">
+        <a href="./debrispage.html"><img src="../images/0bd1bb319dba41b33f27f745bafa9e0420180516.jpeg" alt=""></a>
+        <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">“该用什么词形容你好，哦，你这个马屁精大傻逼呵。原地爆炸吧！”</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/9cd3c371afb80b069682a348b961b253_180.jpeg" alt="" style="width:50px;height:45px;border-radius: 35px;" ></span>
+          <span style="margin-left:30px;line-height:30px;" class="art-per"><a href="./personnel.html">一个森林</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px;"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+<!-- 6 -->
+ <div class="box">
+      <div class="pic">
+        <a href="./debrispage.html"><img src="../images/d438e15134465b50ab2de0fcfbfed15c20180516.jpg" alt=""></a>
+        <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">我无法找到自己的定位。也无法确信是否往正确的方向前进。只知道必须往前走，于是一步一步地往前。 ——《挪威的森林》</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/82b5f76f831ecbb818095c2268b17fa920170306.jpeg" alt="" style="width:50px;height:45px;border-radius:30px; border:1px solid red;" ></span>
+          <span style="margin-left:40px; line-height:50px" class="art-per"><a href="./personnel.html"> ℡海納絔汌½</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px; "></span>
+          </p>
+        </div>
+      </div>
+    </div>
+<!-- 7 -->
+ <div class="box">
+      <div class="pic">
+        <a href="./debrispage.html"><img src="../images/ebc771f9b05ec398e354d407c41ce25620180516.png" alt=""></a>
+        <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">想以后能嫁给爱情~</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/d22ac977b6b017f0b96690c40240aa7720180510.jpeg" alt="" style="width:50px;height:45px;border-radius:30px; border:1px solid red;" ></span>
+          <span style="margin-left:40px;line-height:50px" class="art-per"><a href="./personnel.html"> 晚安柒</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px;"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+<!-- 8 -->
+<div class="box">
+      <div class="pic">
+        <a href="./debrispage.html"><img src="../images/c06b5d08eee2e8a1f9598ff821ee052b20180517.jpg" alt=""></a>
+        <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">从你那儿 体会过遇而不得 夜无眠 得而惜 品过消愁 等过闲愁 终而欣喜 彼此的默契 久居的爱意 铭记于山谷高山流水 以往的拌嘴 早已是爱情的模样 那份以往的埋没 或许有了答案 那条间隔的江水 也搭上梁桥 带你 带我 走进那扇门 (原创.)</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/e78dfe58e4a7efe3b330733143caa58620180507.jpg" alt="" style="width:50px;height:45px;border-radius:30px;" ></span>
+          <span style="margin-left:40px;line-height:50px" class="art-per"><a href="./personnel.html">  ☀️doff</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px;"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 9 -->
+    <div class="box">
+      <div class="pic">
+        <a href="./debrispage.html"><img src="../images/ecfa8e540317944fafdbcba5492e19ce20180517.jpeg" alt=""></a>
+        <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">我希望有个如你一般的人。 如这山间清晨一般明亮清爽的人，如奔赴古城道 路上阳光一般的人，温暖而不炙热，覆盖我所有 肌肤。由起点到夜晚，由山野到书房，一切问题 的答案都很简单。我希望有个如你一般的人，贯 彻未来，数遍生命的公路牌。</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/1572fffa6c19ac9d2a3c1b7dffee36f420180509.jpg" alt="" style="width:50px;height:45px;border-radius:30px;" ></span>
+          <span style="margin-left:40px;line-height:50px" class="art-per"><a href="./personnel.html">春暖🌸开</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px;"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+   <div class="box">
+      <div class="pic">
+        <a href="./debrispage.html"><img src="../images/ad7513f8ea13d6cce34f125d1124194020180517.jpeg" alt=""></a>
+        <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">生活再苦，起码冰淇淋是甜的^_^^_^^_^</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/0d2d9040f4e66a85f47f95ed3923b1a420180425.jpg" alt="" style="width:50px;height:45px;border-radius:30px;" ></span>
+          <span style="margin-left:40px;line-height:50px" class="art-per"><a href="./personnel.html"> 二狗d生活</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px;"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+      <div class="box">
+      <div class="pic">
+        <a href="./debrispage.html"><img src="../images/ba22582a4ea842357d61fbefcdc68e7420180517.jpeg" alt=""></a>
+        <div class="bg-word">
+          <a href="./debrispage.html"><span class="art-tit">我要赚钱，在线等</span></a><br>
+          <p class="talk">
+            <span class="card-type"><img src="../images/9cd3c371afb80b069682a348b961b253_180.jpeg" alt="" style="width:50px;height:45px;border-radius:30px;" ></span>
+          <span style="margin-left:40px;line-height:50px" class="art-per"><a href="">  susu.li</a></span>
+            <span class="others"><img src="../images/like (2).png" alt="" style="width:30px;height:25px;"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+  <a href="#">
+      <div class="backTotop"></div>
+  </a>
+  <script src="../js/index-top.js"></script>
+  <script src="../js/debris.js"></script>
+  <script>
+    var writeborder=document.getElementById('writeborder');
+    var wordcount=document.getElementsByClassName('wordcount')[0];
+    console.log(wordcount)
+    writeborder.oninput=function(){
+      var len=writeborder.value.length;
+      wordcount.innerHTML=""+len+"/140字";
+    }
+  </script>
+</body>
+</html>

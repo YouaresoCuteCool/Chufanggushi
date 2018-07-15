@@ -1,0 +1,295 @@
+*{
+	padding: 0;
+	margin:0;	
+}
+body{
+	background-color: #fdfdfd;
+	position: relative;
+	z-index: -1;
+}
+#header{
+	height:350px;
+	background-image:url(../images/client-bg.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+.headerbox{
+	width:600px;
+	height:300px;
+	margin-left:150px;
+}
+.word{
+	width:400px;
+	height:150px;
+	font-size:50px;
+	font-weight:bold;
+	margin-top:50px;
+	margin-left:30px;
+}
+.headerbox span{
+	color:gray;
+	margin-top:50px;
+	margin-left:50px;
+}
+.headerbox ul{
+	padding:0;
+	margin:0;
+	height:50px;
+	list-style: none;
+	margin-left:30px;
+	margin-top:20px;
+}
+.headerbox ul li{
+	width:145px;
+	height:45px;
+	float:left;
+	margin:10px;
+	color:white;
+	line-height:45px;
+	text-align:center;
+}
+.footeurl{
+	padding:0;
+	margin:0;
+	height:50px;
+	list-style: none;
+	margin-left:30px;
+	margin-top:20px;
+}
+.footeurl li{
+	width:145px;
+	height:45px;
+	float:left;
+	margin:10px;
+	color:white;
+	line-height:45px;
+	text-align:center;
+}
+.iosli{
+	background-color:	#43CD80;
+	background-image:url(../images/client-ios.png);
+	background-repeat: no-repeat;
+	background-size:30px 30px; 
+	background-position:10px 5px;
+	border-radius:25px;
+}
+.androidli{
+	background-color:	#43CD80;
+	background-image:url(../images/client-andorid.png);
+	background-repeat: no-repeat;
+	background-size:30px 30px; 
+	background-position:5px 5px;
+	border-radius:25px;
+}
+.debris img{
+	width:50px;
+	height:50px;
+	margin-left:-40px;
+}
+#section{
+	width:80%;
+	height:1000px;
+	margin:50px 300px;
+	background-image:url(../images/client-one-bg.png);
+	background-position: 0px 200px;
+	background-size:1500px 300px;
+	background-repeat:no-repeat;
+}
+#section .onebg img{
+	width:100px;
+	height:100px;
+	margin-left:450px;
+}
+#section .onebox{
+	width:500px;
+	height:300px;
+	margin-left:500px;
+	margin-top:-90px;
+}
+#section .one{
+	font-size:100px;
+	width:100px;
+	height:100px;
+}
+#section .white{
+	width:100px;
+	height:100px;
+	font-size:30px;
+	font-weight:bold;
+	margin-left:20px;
+}
+#section .oneword{
+	width:300px;
+	height:100px;
+	color:gray;
+	font-size:18px;
+	margin-left:120px;
+}
+#section .boxbg{
+	width:800px;
+	height:655px;
+	margin:0px 200px;
+	background-image:url(../images/client1.png);
+	background-size:800px 650px;
+	background-repeat: no-repeat;
+}
+#sectiontwo{
+	width:80%;
+	height:600px;
+	margin:300px 300px;
+	background-image:url(../images/client-two-bg.png);
+	background-position: 0px 200px;
+	background-size:1500px 300px;
+	background-repeat:no-repeat;
+}
+#sectiontwo .twoimg img{
+	width:330px;
+	height:570px;
+	margin-left:250px;
+}
+#sectiontwo .twobox{
+	width:500px;
+	height:300px;
+	margin-left:700px;
+	margin-top: -400px;
+}
+#sectiontwo .twobg img{
+	width:100px;
+	height:100px;
+	margin-top:-120px;
+	margin-left:30px;
+}
+#sectiontwo .two{
+	font-size:100px;
+	width:100px;
+	height:100px;
+	margin-left:-40px;
+}
+#sectiontwo .live{
+	width:100px;
+	height:100px;
+	font-size:30px;
+	font-weight:bold;
+	margin-left:20px;
+}
+#sectiontwo .twoword{
+	width:300px;
+	height:100px;
+	color:gray;
+	font-size:18px;
+	margin-left:200px;
+}
+#sectionthree{
+	width:80%;
+	height:700px;
+	margin:300px 300px;
+	background-image:url(../images/client-three-bg.png);
+	background-position: 0px 200px;
+	background-size:1500px 300px;
+	background-repeat:no-repeat;
+}
+#sectionthree .threeimg img{
+	width:100px;
+	height:100px;
+	margin-top:150px;
+	margin-left:150px;
+}
+#sectionthree .threebox{
+	width:500px;
+	height:300px;
+	margin-top:-60px;
+	margin-left:200px;
+}
+#sectionthree .three{
+	font-size:100px;
+	width:100px;
+	height:100px;
+}
+#sectionthree .community{
+	width:100px;
+	height:100px;
+	font-size:30px;
+	font-weight:bold;
+}
+#sectionthree .threeword{
+	width:300px;
+	height:100px;
+	color:gray;
+	font-size:18px;
+	margin-left:120px;
+}
+#sectionthree .threebg img{
+	width:330px;
+	height:570px;
+	margin-top:-480px;
+	margin-left:800px;
+}
+#sectionfour{
+	width:80%;
+	height:600px;
+	margin:300px 300px;
+	background-image:url(../images/client-two-bg.png);
+	background-position: 0px 200px;
+	background-size:1500px 300px;
+	background-repeat:no-repeat;
+}
+#sectionfour .fourimg img{
+	width:330px;
+	height:570px;
+	margin-left:200px;
+}
+#sectionfour .fourbox{
+	width:500px;
+	height:300px;
+	margin-left:700px;
+	margin-top: -400px;
+}
+#sectionfour .fourbg img{
+	width:100px;
+	height:100px;
+	margin-top:-120px;
+	margin-left:30px;
+}
+#sectionfour .four{
+	font-size:100px;
+	width:100px;
+	height:100px;
+	margin-left:-40px;
+	margin-top:20px;
+}
+#sectionfour .life{
+	width:400px;
+	height:100px;
+	font-size:30px;
+	font-weight:bold;
+	margin-left:100px;
+}
+#sectionfour .fourword{
+	width:400px;
+	height:50px;
+	color:gray;
+	font-size:18px;
+	margin-left:100px;
+}
+#pagefooter{
+	width:80%;
+	height:600px;
+	margin:200px auto;
+	background-image:url(../images/client-bottom-bg.png);
+	background-position:550px 0px;
+	background-size:250px 200px;
+	background-repeat:no-repeat;
+	border:2px solid white;
+}
+.footerword{
+	width:450px;
+	height:100px;
+	margin-top:200px;
+	font-size: 15px;
+	line-height:30px;
+	margin-left:450px;
+}
+.footeurl{
+	margin-top:30px;
+	margin-left:500px;
+}
